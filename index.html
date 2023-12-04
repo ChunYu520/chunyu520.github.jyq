@@ -11,39 +11,38 @@
       background-size: cover;
       background-position: center;
       margin: 0;
-      padding: 0; /* 取消padding */
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      overflow: hidden; /* 隐藏溢出部分 */
+      overflow: hidden;
     }
 
     #window {
       margin: 6px 16px; /* 上下各6px，左右16px 的 margin */
-      padding: 16px; /* 内容与窗口边缘的距离 */
-      background-color: rgba(255, 255, 255, 0.5); /* 半透明的背景色 */
+      padding: 10px; /* 调整 padding */
+      background-color: rgba(255, 255, 255, 0.5);
       border-radius: 20px;
       backdrop-filter: blur(10px);
-      width: calc(100% - 32px); /* 考虑左右的 margin，宽度减去32px */
+      width: calc(100% - 32px);
     }
 
     #title {
       font-size: 36px;
       font-weight: bold;
-      margin-bottom: 20px;
+      margin-bottom: 10px; /* 调整下边距 */
     }
 
     #content {
       font-size: 18px;
       text-align: center;
       max-width: 800px;
-      margin: 20px;
+      margin-bottom: 10px; /* 调整下边距 */
     }
 
     #copyright {
-      margin-top: auto;
       font-size: 14px;
       color: #999;
     }
