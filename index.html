@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="江雨卿的留言">
   <title>江雨卿的留言</title>
   <style>
     body {
@@ -27,7 +28,12 @@
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 10px; /* 调整下边距 */
-      align-self: flex-start; /* 大标题置于上方 */
+    }
+
+    #content-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     #content {
@@ -43,11 +49,13 @@
       margin: 0; /* 清除默认段落外边距 */
     }
 
-    #copyright {
+    .copyright {
       font-size: 14px;
       color: #999;
       margin-top: auto; /* 将版权信息移到页面底部 */
-      align-self: flex-end; /* 将版权信息对齐到页面右侧 */
+      position: absolute;
+      bottom: 5px;
+      right: 0;
     }
 
     /* 添加媒体查询，根据屏幕宽度调整字体大小 */
@@ -63,12 +71,12 @@
   </style>
 </head>
 <body>
-  <div>
-    <div id="title">江雨卿的留言</div>
+  <div id="title">江雨卿的留言</div>
+  <div id="content-container">
     <div id="content">
       <p>Hello！很高兴你看到了我都留言呀，很抱歉星期一没有多待一会，准备也没有准备好。晚上专门花费了一些时间做了这个页面，我可能会每星期更新一次这个网站的留言，谁会知道是什么呢？</p>
     </div>
   </div>
-  <div id="copyright">版权所有©FoamRainLab  Produced By@江雨卿</div>
+  <div class="copyright">版权所有©FoamRainLab  Produced By@江雨卿</div>
 </body>
 </html>
