@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>江雨卿的留言</title>
+  <style>
+    body {
+      font-family: '微软雅黑', sans-serif;
+      background-image: url('index.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    #blurBackground {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(10px);
+      z-index: -1;
+    }
+
+    #title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    #content {
+      font-size: 18px;
+      text-align: center;
+      max-width: 800px;
+      margin: 20px;
+    }
+
+    #copyright {
+      margin-top: auto;
+      font-size: 14px;
+      color: #999;
+    }
+
+    /* 添加媒体查询，根据屏幕宽度调整字体大小 */
+    @media only screen and (max-width: 600px) {
+      #title {
+        font-size: 24px;
+      }
+
+      #content {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="blurBackground"></div>
+  <div id="title">江雨卿的留言</div>
+  <div id="content">
+    <p>在这个毛玻璃窗口的背景下，江雨卿留下了一段深刻的留言。</p>
+    <p>这里是正文，你可以添加江雨卿的具体留言内容。</p>
+  </div>
+  <div id="copyright">版权所有©FoamRainLab</div>
+</body>
+</html>
