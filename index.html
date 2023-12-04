@@ -16,8 +16,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
+      justify-content: center; /* 调整为居中对齐 */
+      min-height: 100vh; /* 使用 min-height 以确保页面至少占据整个视窗高度 */
       overflow: hidden;
       backdrop-filter: blur(10px);
       background-color: rgba(255, 255, 255, 0.5);
@@ -27,8 +27,7 @@
       font-family: '宋体', sans-serif;
       font-size: 36px;
       font-weight: bold;
-      margin-top: 20vh;
-      margin-bottom: 10px;
+      margin-bottom: 10px; /* 调整底部边距 */
     }
 
     #content-container {
@@ -53,10 +52,6 @@
     .copyright {
       font-size: 14px;
       color: #999;
-      margin-top: auto;
-      position: absolute;
-      bottom: 5px;
-      right: 0;
     }
 
     @media only screen and (max-width: 600px) {
