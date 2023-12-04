@@ -17,16 +17,9 @@
       justify-content: center;
       height: 100vh;
       color: #fff;
-    }
-
-    #blurBackground {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      filter: blur(10px);
-      z-index: -1;
+      /* 添加亚克力效果 */
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
     }
 
     #title {
@@ -61,10 +54,9 @@
   </style>
 </head>
 <body>
-  <div id="blurBackground"></div>
   <div id="title">江雨卿的留言</div>
   <div id="content">
-    <p>在这个毛玻璃窗口的背景下，江雨卿留下了一段深刻的留言。</p>
+    <p>在这个半透明的亚克力窗口的背景下，江雨卿留下了一段深刻的留言。</p>
     <p>这里是正文，你可以添加江雨卿的具体留言内容。</p>
   </div>
   <div id="copyright">版权所有©FoamRainLab</div>
