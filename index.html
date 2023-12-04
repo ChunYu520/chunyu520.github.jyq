@@ -11,18 +11,22 @@
       background-size: cover;
       background-position: center;
       margin: 0;
-      padding: 16px; /* 固定边缘边距为16px */
+      padding: 0; /* 取消padding */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: calc(100vh - 32px); /* 使用calc确保body至少占据整个视窗高度减去两倍边距 */
-      color: #fff;
-      /* 添加亚克力效果 */
-      backdrop-filter: blur(10px);
-      background-color: rgba(255, 255, 255, 0.5);
-      /* 添加圆角效果 */
+      height: 100vh;
+      overflow: hidden; /* 隐藏溢出部分 */
+    }
+
+    #window {
+      margin: 6px 16px; /* 上下各6px，左右16px 的 margin */
+      padding: 16px; /* 内容与窗口边缘的距离 */
+      background-color: rgba(255, 255, 255, 0.5); /* 半透明的背景色 */
       border-radius: 20px;
+      backdrop-filter: blur(10px);
+      width: calc(100% - 32px); /* 考虑左右的 margin，宽度减去32px */
     }
 
     #title {
@@ -57,11 +61,13 @@
   </style>
 </head>
 <body>
-  <div id="title">江雨卿的留言</div>
-  <div id="content">
-    <p>Hello！很高兴你看到了我都留言呀，很抱歉星期一没有多待一会，准备也没有准备好。</p>
-    <p>晚上专门花费了一些时间做了这个页面，我可能会每星期更新一次这个网站的留言，谁会知道是什么呢？</p>
+  <div id="window">
+    <div id="title">江雨卿的留言</div>
+    <div id="content">
+      <p>Hello！很高兴你看到了我都留言呀，很抱歉星期一没有多待一会，准备也没有准备好。</p>
+      <p>晚上专门花费了一些时间做了这个页面，我可能会每星期更新一次这个网站的留言，谁会知道是什么呢？</p>
+    </div>
+    <div id="copyright">版权所有©FoamRainLab  Produced By@江雨卿</div>
   </div>
-  <div id="copyright">版权所有©FoamRainLab  Produced By@江雨卿</div>
 </body>
 </html>
